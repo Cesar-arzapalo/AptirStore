@@ -11,22 +11,26 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:fitsSystemWindows="true"
-        app:contentScrim="?attr/colorPrimary"
-        app:layout_scrollFlags="scroll|exitUntilCollapsed"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <ImageView
+        android:fitsSystemWindows="true">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_width="match_parent"
-            android:src="@drawable/shop"
-            android:scaleType="centerCrop"/>
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            app:layout_collapseMode="pin"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"/>
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/shop"
+                android:scaleType="centerCrop"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
     
     
@@ -34,17 +38,9 @@
         android:id="@+id/rcViewLanding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:behavior_overlapTop="100dp"
+        app:behavior_overlapTop="20dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
-    <TextView
-        android:id="@+id/txtView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
