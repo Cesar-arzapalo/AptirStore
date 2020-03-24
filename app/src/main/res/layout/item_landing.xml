@@ -12,9 +12,9 @@
         <ImageView
             android:id="@+id/imgItemHeader"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:transitionName="TransitionHeader"
+            android:transitionName="transitionHeader"
             android:src="@drawable/tamako_item"/>
 
         <LinearLayout
@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Titulo"
-                android:transitionName="TrasitionTitle"
+                android:transitionName="transitionTitle"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Titulo"
-                android:transitionName="TrasitionDesc"
+                android:transitionName="transitionDesc"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
             <TextView
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Titulo"
-                android:transitionName="TrasitionPrice"
+                android:transitionName="transitionPrice"
                 android:layout_gravity="end"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorAccent"/>

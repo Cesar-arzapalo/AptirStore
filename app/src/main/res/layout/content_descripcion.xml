@@ -11,17 +11,17 @@
         android:orientation="vertical"
         android:padding="16dp">
         <TextView
-            android:id="@+id/txtDetailTItulo"
+            android:id="@+id/txtDetailTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:transitionName="TrasitionTitle"
+            android:transitionName="transitionTitle"
             android:text="Titulo"/>
         <TextView
             android:id="@+id/txtDetailDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:transitionName="TrasitionDesc"
+            android:transitionName="transitionDesc"
             android:textSize="18sp"
             android:text="Descrip"/>
         <TextView
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:transitionName="TrasitionPrice"
+            android:transitionName="transitionPrice"
             android:textColor="@color/colorAccent"
             android:layout_gravity="end"
             android:text="$$$"/>
