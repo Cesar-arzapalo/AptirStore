@@ -10,9 +10,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
+            android:id="@+id/imgItemHeader"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
+            android:transitionName="TransitionHeader"
             android:src="@drawable/tamako_item"/>
 
         <LinearLayout
@@ -25,6 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Titulo"
+                android:transitionName="TrasitionTitle"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
@@ -32,6 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Titulo"
+                android:transitionName="TrasitionDesc"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
             <TextView
@@ -39,6 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Titulo"
+                android:transitionName="TrasitionPrice"
                 android:layout_gravity="end"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorAccent"/>
